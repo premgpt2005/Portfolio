@@ -26,14 +26,55 @@ st.divider()
 
 # 3. TECHNICAL SKILLS SECTION
 st.subheader("🛠️ Technical Skills")
-# Using Streamlit's native markdown code blocks for a clean "badge" look
-st.markdown("""
-`Python` &nbsp; `SQL (PostgreSQL)` &nbsp; `R` &nbsp; `Generative AI` &nbsp; `Machine Learning` &nbsp; `Power BI & Excel` &nbsp; `A/B Testing` &nbsp; `Pandas & Scikit-Learn` &nbsp; `Data Visualization`
-""")
+
+skill_col1, skill_col2 = st.columns(2)
+with skill_col1:
+    st.markdown("**Programming Languages & Frameworks**")
+    st.markdown("`Python` &nbsp; `PostgreSQL` &nbsp; `R` &nbsp; `NumPy` &nbsp; `Pandas` &nbsp; `Scikit-Learn` &nbsp; `Sci-Py` &nbsp; `Matplotlib` &nbsp; `Seaborn`")
+    
+    st.markdown("**Tools & Platforms**")
+    st.markdown("`Power BI` &nbsp; `Excel` &nbsp; `Jupyter Notebook` &nbsp; `Git` &nbsp; `GitHub`")
+
+with skill_col2:
+    st.markdown("**Core Competencies**")
+    st.markdown("`Machine Learning` &nbsp; `Generative AI` &nbsp; `Exploratory Data Analysis (EDA)` &nbsp; `Data Visualization` &nbsp; `A/B Testing` &nbsp; `Predictive Modeling` &nbsp; `Data Wrangling` &nbsp; `Statistical Analysis`")
 
 st.divider()
 
-# 4. PROJECTS SECTION
+# 4. EXPERIENCE SECTION
+st.subheader("💼 Virtual Experience")
+
+with st.container(border=True):
+    col_a, col_b = st.columns([3, 1])
+    with col_a:
+        st.markdown("### GenAI Data Analytics Virtual Internship")
+        st.caption("**Tata iQ**")
+    with col_b:
+        st.markdown("<p style='text-align: right; color: gray; margin-top: 1rem;'>June 2026</p>", unsafe_allow_html=True)
+    
+    st.markdown("""
+    * Leveraged Generative AI tools to conduct EDA and architect a no-code predictive modeling framework for customer delinquency risk.
+    * Designed an automated collections strategy utilizing agentic AI with ethical AI principles.
+    """)
+    st.link_button("🔗 View Work Repository", "https://github.com/premgpt2005/AI-Powered-Credit-Risk-Analytics")
+
+with st.container(border=True):
+    col_c, col_d = st.columns([3, 1])
+    with col_c:
+        st.markdown("### Data Analytics Internship")
+        st.caption("**Codec Technologies**")
+    with col_d:
+        st.markdown("<p style='text-align: right; color: gray; margin-top: 1rem;'>May 2026 - June 2026</p>", unsafe_allow_html=True)
+    
+    st.markdown("""
+    * Executed real-world ML projects including IBM HR Attrition Analysis and Customer Churn Prediction.
+    * Performed feature engineering and predictive modeling using Python, Excel, and Power BI.
+    """)
+    st.link_button("🔗 View Work Repository", "https://github.com/premgpt2005/CodecTechnologies-Internship")
+
+st.divider()
+
+# 5. PROJECTS SECTION
 st.subheader("🚀 Projects")
 
 # Creating a 2-column grid for project cards
@@ -97,33 +138,26 @@ with proj_col2:
 
 st.divider()
 
-# 5. EXPERIENCE SECTION
-st.subheader("💼 Virtual Experience")
+# 6. CERTIFICATES SECTION
+st.subheader("📜 Certificates")
 
-with st.container(border=True):
-    col_a, col_b = st.columns([3, 1])
-    with col_a:
-        st.markdown("### GenAI Data Analytics Virtual Internship")
-        st.caption("**Tata iQ**")
-    with col_b:
-        st.markdown("<p style='text-align: right; color: gray; margin-top: 1rem;'>June 2026</p>", unsafe_allow_html=True)
-    
-    st.markdown("""
-    * Leveraged Generative AI tools to conduct EDA and architect a no-code predictive modeling framework for customer delinquency risk.
-    * Designed an automated collections strategy utilizing agentic AI with ethical AI principles.
-    """)
-    st.link_button("🔗 View Work Repository", "https://github.com/premgpt2005/AI-Powered-Credit-Risk-Analytics")
-
-with st.container(border=True):
-    col_c, col_d = st.columns([3, 1])
-    with col_c:
-        st.markdown("### Data Analytics Internship")
-        st.caption("**Codec Technologies**")
-    with col_d:
-        st.markdown("<p style='text-align: right; color: gray; margin-top: 1rem;'>May 2026 - June 2026</p>", unsafe_allow_html=True)
-    
-    st.markdown("""
-    * Executed real-world ML projects including IBM HR Attrition Analysis and Customer Churn Prediction.
-    * Performed feature engineering and predictive modeling using Python, Excel, and Power BI.
-    """)
-    st.link_button("🔗 View Work Repository", "https://github.com/premgpt2005/CodecTechnologies-Internship")
+cert_col1, cert_col2 = st.columns(2)
+with cert_col1:
+    with st.container(border=True):
+        st.markdown("**Machine Learning with Python**")
+        st.caption("IBM")
+        st.link_button("🔗 View", "https://coursera.org/share/2bbf1cb9a83ac894bb8c9b21ae0644e9")
+    with st.container(border=True):
+        st.markdown("**Mastering Power BI: Data to Dashboard**")
+        st.caption("Udemy")
+        st.link_button("🔗 View", "https://www.udemy.com/certificate/UC-7c2fe6cf-f076-4eee-8d0f-97697921371b/")
+        
+with cert_col2:
+    with st.container(border=True):
+        st.markdown("**Python (Basic) Certification**")
+        st.caption("HackerRank")
+        st.link_button("🔗 View", "https://www.hackerrank.com/certificates/6487955c6ddc")
+    with st.container(border=True):
+        st.markdown("**SQL (Intermediate) Certification**")
+        st.caption("HackerRank")
+        st.link_button("🔗 View", "https://www.hackerrank.com/certificates/8cc5f41b2ed2")
